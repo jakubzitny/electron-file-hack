@@ -10,6 +10,17 @@
     We are using node <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
+
+    <h2>File experiments</h2>
+    <div>
+      <input type="file" id="file" multiple />
+      <input type="file" id="file__hidden" style="visibility: hidden" multiple />
+      <input type="file" id="file__hidden2" style="visibility: hidden" multiple />
+
+      <button id="file__dialog_hack">R: open hidden file input</button>
+      <button id="file__dialog_r">R: dialog#showOpenDialog()</button>
+      <button id="file__dialog_m">M: dialog#showOpenDialog()</button>
+    </div>
   </body>
 
   <script>
